@@ -303,7 +303,7 @@ const bigProjects = {
       date: "2024",
       client: "SARPI SPA",
       duration: "5 mois",
-      footerLink: "Voir la démo"[
+      footerLink:[
         { name: "Voir la démo"}
       ]
     },
