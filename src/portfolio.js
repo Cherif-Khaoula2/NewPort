@@ -199,83 +199,251 @@ const openSource = {
 // Some big projects you have worked on
 const bigProjects = {
   title: "Projets",
-  subtitle: "Startups et entreprises que j’ai aidées à développer leur technologie",
+  subtitle: "Startups et entreprises que j'ai aidées à développer leur technologie",
   projects: [
     {
       projectName: "Site vitrine SARPI",
       projectDesc: "Conception et développement du site vitrine officiel de SARPI, présentant l'entreprise, ses activités et ses services.",
-      technologies: ["Nextjs", "Laravel", "TypeScript", "PHP", "Tailwind", "Inertia"],
+      detailedDesc: "Site web moderne et responsive développé avec Next.js et Laravel, offrant une expérience utilisateur fluide et un design professionnel aligné avec l'identité de marque SARPI.",
+      technologies: ["Next.js", "Laravel", "TypeScript", "PHP", "Tailwind CSS", "Inertia.js"],
       image: require("./assets/images/sitesarpi.png"),
+      images: [
+        require("./assets/images/sitesarpi/1.png"),
+        require("./assets/images/sitesarpi/2.png"),
+        require("./assets/images/sitesarpi/3.png"),
+        require("./assets/images/sitesarpi/4.png"),
+        require("./assets/images/sitesarpi/5.png"),
+        require("./assets/images/sitesarpi/6.png"),
+        require("./assets/images/sitesarpi/7.png"),
+        require("./assets/images/sitesarpi/8.png"),
+        require("./assets/images/sitesarpi/9.png"),
+        require("./assets/images/sitesarpi/10.png"),
+        require("./assets/images/sitesarpi/11.png"),
+        require("./assets/images/sitesarpi/12.png"),
+        require("./assets/images/sitesarpi/13.png"),
+        require("./assets/images/sitesarpi/14.png"),
+        require("./assets/images/sitesarpi/15.png"),
+        require("./assets/images/sitesarpi/16.png"),
+        require("./assets/images/sitesarpi/17.png"),
+        require("./assets/images/sitesarpi/18.png"),
+        require("./assets/images/sitesarpi/19.png"),
+      ],
+      features: [
+        "Design moderne et responsive",
+        "Animation fluide et transitions élégantes",
+        "Système de gestion de contenu intégré",
+        "Optimisation SEO avancée",
+        "Performance optimisée (score Lighthouse 95+)"
+      ],
+      date: "2024",
+      client: "SARPI SPA",
+      duration: "3 mois",
       footerLink: [
-        { name: "Visiter le site", url: "https://sarpi.dz/" }
+        { name: "Voir la démo"}
       ]
     },
 
     {
       projectName: "Intranet SARPI – Portail interne",
-      projectDesc: "Conception et développement d’un intranet interne pour SARPI avec Drupal, centralisant les informations internes, documents et procédures, et facilitant la communication entre les services.",
-      technologies: ["Drupal", "Intranet", "Communication interne", "Gestion documentaire"],
-            image: require("./assets/images/portail.png"),
-
-           footerLink: [
-        { name: "Visiter le site", url: "http://nextu.se/" }
+      projectDesc: "Conception et développement d'un intranet interne pour SARPI avec Drupal, centralisant les informations internes, documents et procédures.",
+      detailedDesc: "Plateforme collaborative complète permettant aux employés de SARPI d'accéder facilement aux ressources internes, de partager des documents et de communiquer efficacement entre les différents services.",
+      technologies: ["Drupal 10", "PHP", "MySQL", "JavaScript", "Bootstrap"],
+      image: require("./assets/images/portail.png"),
+      images: [
+        require("./assets/images/portail/1.png"),
+        require("./assets/images/portail/2.png"),
+        require("./assets/images/portail/3.png"),
+        require("./assets/images/portail/4.png"),
+        require("./assets/images/portail/5.png")
+      ],
+      features: [
+        "Authentification LDAP intégrée",
+        "Gestion documentaire avancée",
+        "Système de recherche intelligent",
+        "Workflow de validation des documents",
+        "Annuaire des employés",
+        "Calendrier partagé des événements"
+      ],
+      date: "2023-2024",
+      client: "SARPI SPA",
+      duration: "4 mois",
+      footerLink: [
+        { name: "Voir la démo" }
       ]
     },
+
     {
       projectName: "GMAT – Gestion matériel et maintenance",
       projectDesc: "Application de gestion du matériel et de la maintenance. Suivi quotidien du matériel et gestion des opérations de maintenance.",
-      technologies: ["React", "Laravel", "TypeScript", "PHP", "Tailwind", "Inertia"],
+      detailedDesc: "Système complet de GMAO (Gestion de Maintenance Assistée par Ordinateur) permettant le suivi en temps réel de tous les équipements, la planification des maintenances préventives et la gestion des interventions correctives.",
+      technologies: ["React", "Laravel", "TypeScript", "PHP", "Tailwind CSS", "Inertia.js", "Chart.js"],
       image: require("./assets/images/gmat.png"),
-
-           footerLink: [
-        { name: "Visiter le site", url: "http://nextu.se/" }
+      images: [
+        require("./assets/images/gmat/1.png"),
+        require("./assets/images/gmat/2.png"),
+        require("./assets/images/gmat/3.png"),
+        require("./assets/images/gmat/4.png"),
+        require("./assets/images/gmat/5.png"),
+        require("./assets/images/gmat/6.png"),
+        require("./assets/images/gmat/7.png"),
+        require("./assets/images/gmat/8.png"),
+        require("./assets/images/gmat/9.png"),
+        require("./assets/images/gmat/10.png"),
+        require("./assets/images/gmat/11.png") 
+      ],
+      features: [
+        "Inventaire complet du matériel",
+        "Planification automatique des maintenances",
+        "Gestion des bons d'intervention",
+        "Tableau de bord analytique",
+        "Historique complet des opérations",
+        "Notifications automatiques",
+        "Export de rapports PDF/Excel"
+      ],
+      date: "2024",
+      client: "SARPI SPA",
+      duration: "5 mois",
+      footerLink: "Voir la démo"[
+        { name: "Voir la démo"}
       ]
     },
+
     {
       projectName: "Plateforme pour la commission des marchés (CME)",
-      projectDesc: "Solution web interne pour la gestion des marchés publics, intégrant des modèles de recommandation basés sur l’IA pour optimiser les décisions.",
-      technologies: ["Spring Boot", "Angular", "Java", "TypeScript", "API", "Microservices", "IA", "XGBoost", "Random Forest"],
-       image: require("./assets/images/cme.png"),
-
-           footerLink: [
-        { name: "Visiter le site", url: "http://nextu.se/" }
+      projectDesc: "Solution web interne pour la gestion des marchés publics, intégrant des modèles de recommandation basés sur l'IA pour optimiser les décisions.",
+      detailedDesc: "Plateforme intelligente d'aide à la décision pour l'évaluation et la sélection des offres dans les marchés publics, utilisant des algorithmes d'apprentissage automatique pour analyser les soumissions et fournir des recommandations objectives.",
+      technologies: ["Spring Boot", "Angular", "Java", "TypeScript", "PostgreSQL", "Docker", "XGBoost", "Random Forest", "Python"],
+      image: require("./assets/images/cme.png"),
+      images: [
+        require("./assets/images/cme/1.png"),
+        require("./assets/images/cme/2.png"),
+        require("./assets/images/cme/3.png"),
+        require("./assets/images/cme/4.png"),
+        require("./assets/images/cme/5.png"),
+        require("./assets/images/cme/6.png"),
+        require("./assets/images/cme/7.png"),
+        require("./assets/images/cme/8.png"),
+        require("./assets/images/cme/9.png"),
+        require("./assets/images/cme/10.png"),
+        require("./assets/images/cme/11.png"),
+        require("./assets/images/cme/12.png"),
+        require("./assets/images/cme/13.png"),
+        require("./assets/images/cme/14.png"),
+        require("./assets/images/cme/15.png"),
+        require("./assets/images/cme/16.png"),
+        require("./assets/images/cme/17.png"),
+        require("./assets/images/cme/18.png"),
+        require("./assets/images/cme/19.png"),
+        require("./assets/images/cme/20.png"),
+        require("./assets/images/cme/21.png"),
+        require("./assets/images/cme/22.png"),
+        
+        
+      ],
+      features: [
+        "Analyse automatique des offres",
+        "Scoring multi-critères avec IA",
+        "Détection d'anomalies dans les soumissions",
+        "Génération automatique de rapports d'évaluation",
+        "Traçabilité complète du processus",
+        "Tableaux de bord décisionnels",
+        "API REST pour intégrations tierces"
+      ],
+      date: "2024",
+      client: "Administration publique",
+      duration: "6 mois",
+      footerLink: [
+        { name: "Voir la démo"}
       ]
     },
+
     {
       projectName: "TOSYS App",
       projectDesc: "Système pour créer, modifier, bloquer et réinitialiser les comptes Active Directory et Exchange pour SARPI SPA.",
-      technologies: ["React", "Laravel", "JavaScript", "PHP", "Tailwind", "SSH", "Active Directory", "Exchange"],
-       image: require("./assets/images/tosys.png"),
-
-           footerLink: [
-        { name: "Visiter le site", url: "http://nextu.se/" }
+      detailedDesc: "Application d'administration IT permettant une gestion simplifiée et sécurisée des comptes utilisateurs, des boîtes email et des droits d'accès dans l'infrastructure Microsoft de l'entreprise.",
+      technologies: ["React", "Laravel", "JavaScript", "PHP", "Tailwind CSS", "LDAP", "PowerShell", "Active Directory"],
+      image: require("./assets/images/tosys.png"),
+      images: [
+        require("./assets/images/tosys.png"),
+        require("./assets/images/tosys.png"),
+        require("./assets/images/tosys.png")
+      ],
+      features: [
+        "Gestion des comptes Active Directory",
+        "Création/modification de boîtes Exchange",
+        "Réinitialisation sécurisée de mots de passe",
+        "Gestion des groupes et permissions",
+        "Audit trail complet",
+        "Interface d'administration intuitive",
+        "Connexion LDAP sécurisée"
+      ],
+      date: "2023",
+      client: "SARPI SPA",
+      duration: "2 mois",
+      footerLink: [
+        { name: "Voir la démo"}
       ]
     },
+
     {
       projectName: "CND Platform",
-      projectDesc: "Application pour la gestion centralisée des projets et utilisateurs pour le contrôle non descriptif. Gestion des ISOs, joints et PV, suivi des contrôles VT, RT, PT et PWHT.",
-      technologies: ["React", "Laravel", "JavaScript", "PHP", "Tailwind", "Inertia"],
+      projectDesc: "Application pour la gestion centralisée des projets et utilisateurs pour le contrôle non destructif. Gestion des ISOs, joints et PV.",
+      detailedDesc: "Plateforme complète de gestion des activités de contrôle non destructif (CND), permettant le suivi des certifications ISO, la gestion des rapports d'inspection et la traçabilité des opérations de contrôle (VT, RT, PT, PWHT).",
+      technologies: ["React", "Laravel", "JavaScript", "PHP", "Tailwind CSS", "Inertia.js", "MySQL"],
       image: require("./assets/images/cnd.png"),
-
-           footerLink: [
-        { name: "Visiter le site", url: "http://nextu.se/" }
+      images: [
+        require("./assets/images/cnd.png"),
+        require("./assets/images/cnd.png"),
+        require("./assets/images/cnd.png")
+      ],
+      features: [
+        "Gestion des certifications ISO",
+        "Suivi des projets de contrôle",
+        "Génération automatique de PV",
+        "Gestion des qualifications des techniciens",
+        "Planification des inspections",
+        "Archivage numérique des rapports",
+        "Statistiques et tableaux de bord"
+      ],
+      date: "2024",
+      client: "Entreprise industrielle",
+      duration: "4 mois",
+      footerLink: [
+        { name: "Voir la démo"}
       ]
     },
+
     {
       projectName: "Application web – Gestion des courriers",
       projectDesc: "Application web interne pour la gestion des courriers chez Algérie Télécom, avec suivi, archivage et traitement efficace des documents.",
-      technologies: ["HTML", "CSS", "PHP", "Web", "Gestion documentaire"],
-       image: require("./assets/images/courrier.png"),
-
-           footerLink: [
-        { name: "Visiter le site", url: "http://nextu.se/" }
+      detailedDesc: "Système de gestion électronique des documents (GED) spécialisé dans le traitement du courrier entrant et sortant, permettant un suivi complet du circuit de traitement, de l'enregistrement jusqu'à l'archivage.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"],
+      image: require("./assets/images/courrier.png"),
+      images: [
+        require("./assets/images/courrier.png"),
+        require("./assets/images/courrier.png"),
+        require("./assets/images/courrier.png")
+      ],
+      features: [
+        "Enregistrement automatique des courriers",
+        "Workflow de traitement paramétrable",
+        "Numérisation et OCR",
+        "Suivi en temps réel",
+        "Archivage électronique sécurisé",
+        "Recherche avancée multi-critères",
+        "Notifications par email"
+      ],
+      date: "2023",
+      client: "Algérie Télécom",
+      duration: "3 mois",
+      footerLink: [
+       { name: "Voir la démo"}
       ]
-    },
-    
-  
+    }
   ],
   display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
